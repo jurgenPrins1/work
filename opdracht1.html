@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<header>
+</header>
+<body>
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" ><br>
+        <button onclick="nameCheck()">submit</button>
+    </div>
+</body>
+
+<script>
+
+    function nameCheck(){
+
+        let name = document.getElementById("name").value;
+        if(name == "hallo"){
+            alert("welkom");
+        }
+        if(name == "doei"){
+            alert("Tot de volgende keer")
+        }
+
+    }
+</script>

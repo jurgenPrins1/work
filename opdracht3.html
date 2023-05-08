@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<header>
+</header>
+<body>
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" ><br>
+        <label for="filter">filter:</label>
+        <input type="text" id="filter" name="filter" ><br>
+        <button onclick="filterCheck()">submit</button>
+    </div>
+</body>
+
+<script>
+
+function filterCheck(){
+    let input = document.getElementById("name").value;
+    if(input.match(/e/)){
+        alert((input.match(new RegExp(document.getElementById("filter").value,"g")) || []).length);
+    }
+}
+
+</script>

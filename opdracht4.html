@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<header>
+</header>
+<body>
+    <div>
+        <button onclick="addHistory('A')" id="a" name="a">a</button>
+        <button onclick="addHistory('B')"id="b" name="b">b</button><br>
+        <button onclick="addHistory('C')"id="c" name="c">c</button>
+        <button onclick="addHistory('D')"id="d" name="d">d</button>
+    </div>
+    <div>
+        <p id="history" name="history"></p>
+    </div>
+</body>
+
+<script>
+ var completeHistory;
+function addHistory(clickedButton){
+
+
+    let history = document.getElementById("history");
+    let br = document.createElement('span')
+    br.innerHTML = "<br>"
+    history.appendChild(document.createTextNode("u heeft op "+ clickedButton +" geklikt."))
+    history.append(br);
+    
+
+}
+
+</script>
